@@ -1,0 +1,8 @@
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/chroma_data:/data
